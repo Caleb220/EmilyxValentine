@@ -54,11 +54,18 @@ h1 {
     border-radius: 5px;
 }
 .yes {
-    background-color: #ff4d4d;
+    font-family: 'Dancing Script', cursive;
+    background-color: #39c934;
     color: white;
 }
+.yes:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 10px #43f03d;;
+}
 .no {
-    background-color: #999;
+    font-family: 'Dancing Script', cursive;
+    background-color: #db1818;
     color: white;
 }
 .hearts {

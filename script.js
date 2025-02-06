@@ -42,6 +42,11 @@ function createHearts() {
     }
 }
 function explodePresent() {
-    alert('Yay! I love you! 💙');
+        Swal.fire({
+            title: "Yay! 💙",
+            text: "I knew you'd say yes!",
+            icon: "success",
+            confirmButtonText: "Love you"
+        });
 }
 createHearts();
