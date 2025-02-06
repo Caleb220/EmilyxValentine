@@ -9,8 +9,8 @@ function moveNoButton() {
     let maxY = window.innerHeight - noButton.offsetHeight;
 
     // Ensure the button never goes outside the screen
-    let x = Math.max(0, Math.min(Math.random() * maxX, maxX));
-    let y = Math.max(0, Math.min(Math.random() * maxY, maxY));
+    let x = Math.max(20, Math.min(Math.random() * maxX, maxX));
+    let y = Math.max(20, Math.min(Math.random() * maxY, maxY));
 
     // Apply the new position
     noButton.style.left = `${x}px`;
