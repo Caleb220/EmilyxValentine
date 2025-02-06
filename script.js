@@ -9,8 +9,8 @@ function moveNoButton() {
     let maxY = document.documentElement.clientHeight - noButton.offsetHeight;
 
     // Generate a random position within bounds
-    let x = Math.floor(Math.random() * maxX);
-    let y = Math.floor(Math.random() * maxY);
+    let x = Math.floor(70, Math.random() * maxX);
+    let y = Math.floor(70, Math.random() * maxY);
 
     // Apply new position
     noButton.style.left = `${x}px`;
