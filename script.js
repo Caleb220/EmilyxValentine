@@ -1,21 +1,22 @@
 function moveNoButton() {
     let noButton = document.querySelector('.no');
 
-    // Ensure the button is positioned absolutely
+    // Ensure the button has absolute positioning
     noButton.style.position = "absolute";
 
-    // Calculate the max possible X and Y positions
-    let maxX = (document.documentElement.clientWidth - noButton.offsetWidth) - 50;
-    let maxY = (document.documentElement.clientHeight - noButton.offsetHeight) - 50;
+    // Get the viewport width and height
+    let maxX = window.innerWidth - noButton.offsetWidth;
+    let maxY = window.innerHeight - noButton.offsetHeight;
 
-    // Generate a random position within bounds
-    let x = Math.floor(70, Math.random() * maxX);
-    let y = Math.floor(70, Math.random() * maxY);
+    // Ensure the button never goes outside the screen
+    let x = Math.max(0, Math.min(Math.random() * maxX, maxX));
+    let y = Math.max(0, Math.min(Math.random() * maxY, maxY));
 
-    // Apply new position
+    // Apply the new position
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
 }
+
 
 function createHearts() {
     const heartsContainer = document.querySelector('.hearts');
