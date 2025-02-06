@@ -1,7 +1,7 @@
 function moveNoButton() {
     let noButton = document.querySelector('.no');
-    let x = Math.random() * (window.innerWidth - noButton.offsetWidth - 700);
-    let y = Math.random() * (window.innerHeight - noButton.offsetHeight - 700);
+    let x = Math.random() * (window.innerWidth - noButton.offsetWidth - 300);
+    let y = Math.random() * (window.innerHeight - noButton.offsetHeight - 300);
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
 }
