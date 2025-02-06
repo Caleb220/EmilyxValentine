@@ -1,18 +1,11 @@
 function moveNoButton() {
     let noButton = document.querySelector('.no');
+    let maxX = window.innerWidth - noButton.offsetWidth - 20; // 20px margin
+    let maxY = window.innerHeight - noButton.offsetHeight - 20; // 20px margin
 
-    // Ensure the button has absolute positioning
-    noButton.style.position = "absolute";
+    let x = Math.max(50, Math.random() * maxX);
+    let y = Math.max(50, Math.random() * maxY);
 
-    // Get the viewport width and height
-    let maxX = window.innerWidth - noButton.offsetWidth;
-    let maxY = window.innerHeight - noButton.offsetHeight;
-
-    // Ensure the button never goes outside the screen
-    let x = Math.max(20, Math.min(Math.random() * maxX, maxX));
-    let y = Math.max(20, Math.min(Math.random() * maxY, maxY));
-
-    // Apply the new position
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
 }
