@@ -1,5 +1,9 @@
 function moveNoButton() {
     let noButton = document.querySelector('.no');
+
+    // Ensure the button is positioned absolutely
+    noButton.style.position = "absolute";
+    
     let maxX = window.innerWidth - noButton.offsetWidth - 20; // 20px margin
     let maxY = window.innerHeight - noButton.offsetHeight - 20; // 20px margin
 
