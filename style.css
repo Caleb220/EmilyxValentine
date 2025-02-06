@@ -23,7 +23,6 @@ h1 {
 .btn-container {
     display: flex;
     justify-content: center;
-    gap: 500px;
     margin-top: 10px;
 }
 .btn {
@@ -36,7 +35,6 @@ h1 {
 .yes {
     background-color: #ff4d4d;
     color: white;
-    margin-right: 200px;
 }
 .no {
     background-color: #999;
