@@ -42,20 +42,6 @@ function createHearts() {
     }
 }
 function explodePresent() {
-    const present = document.querySelector('.present');
-    present.style.display = 'none';
-    const heartsContainer = document.querySelector('.hearts');
-    for (let i = 0; i < 30; i++) {
-        let heart = document.createElement('div');
-        heart.classList.add('heart');
-        heart.style.left = `${50 + Math.random() * 20 - 10}%`;
-        heart.style.top = `${50 + Math.random() * 20 - 10}%`;
-        heart.style.transform = `scale(${Math.random() * 2})`;
-        heart.style.animation = 'explode 1.5s ease-out forwards';
-        heartsContainer.appendChild(heart);
-    }
-    setTimeout(() => {
-        alert('Yay! I love you! 💙');
-    }, 1500);
+    alert('Yay! I love you! 💙');
 }
 createHearts();
