@@ -23,6 +23,8 @@ h1 {
 .btn-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
     margin-top: 10px;
 }
 .btn {
@@ -39,7 +41,6 @@ h1 {
 .no {
     background-color: #999;
     color: white;
-    position: absolute;
 }
 .hearts {
     position: fixed;
