@@ -3,8 +3,8 @@ function moveNoButton() {
     let maxX = window.innerWidth - noButton.offsetWidth - 20; // 20px margin
     let maxY = window.innerHeight - noButton.offsetHeight - 20; // 20px margin
 
-    let x = Math.max(60, Math.random() * maxX);
-    let y = Math.max(60, Math.random() * maxY);
+    let x = Math.max(80, Math.random() * maxX);
+    let y = Math.max(80, Math.random() * maxY);
 
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
