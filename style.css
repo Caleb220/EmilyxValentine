@@ -1,8 +1,70 @@
 body {
+    background-color: #add8e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
     text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: pink;
 }
 h1 {
-    color: red;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    margin-top: 10px;
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.yes {
+    background-color: #ff4d4d;
+    color: white;
+    margin-right: 100px;
+}
+.no {
+    background-color: #999;
+    color: white;
+    position: absolute;
+    margin-left: 100px;
+}
+.hearts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url('heart.png');
+    background-size: cover;
+}
+.teddy {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: auto;
 }
