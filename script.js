@@ -5,8 +5,8 @@ function moveNoButton() {
     noButton.style.position = "absolute";
 
     // Calculate the max possible X and Y positions
-    let maxX = document.documentElement.clientWidth - noButton.offsetWidth;
-    let maxY = document.documentElement.clientHeight - noButton.offsetHeight;
+    let maxX = (document.documentElement.clientWidth - noButton.offsetWidth) - 50;
+    let maxY = (document.documentElement.clientHeight - noButton.offsetHeight) - 50;
 
     // Generate a random position within bounds
     let x = Math.floor(70, Math.random() * maxX);
