@@ -1,11 +1,18 @@
 function moveNoButton() {
     let noButton = document.querySelector('.no');
-    let maxX = window.innerWidth - noButton.offsetWidth - 40; // 20px margin
-    let maxY = window.innerHeight - noButton.offsetHeight - 40; // 20px margin
 
-    let x = Math.max(130, Math.random() * maxX);
-    let y = Math.max(130, Math.random() * maxY);
+    // Ensure the button is positioned absolutely
+    noButton.style.position = "absolute";
 
+    // Calculate the max possible X and Y positions
+    let maxX = document.documentElement.clientWidth - noButton.offsetWidth;
+    let maxY = document.documentElement.clientHeight - noButton.offsetHeight;
+
+    // Generate a random position within bounds
+    let x = Math.floor(Math.random() * maxX);
+    let y = Math.floor(Math.random() * maxY);
+
+    // Apply new position
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
 }
