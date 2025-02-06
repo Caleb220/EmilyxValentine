@@ -17,7 +17,7 @@ function moveNoButton() {
 
 function createHearts() {
     const heartsContainer = document.querySelector('.hearts');
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < 70; i++) {
         let heart = document.createElement('div');
         heart.classList.add('heart');
         heart.style.left = `${Math.random() * 100}%`;
