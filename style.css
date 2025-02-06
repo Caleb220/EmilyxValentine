@@ -36,13 +36,12 @@ h1 {
 .yes {
     background-color: #ff4d4d;
     color: white;
-    margin-right: 100px;
+    margin-right: 200px;
 }
 .no {
     background-color: #999;
     color: white;
     position: absolute;
-    margin-left: 100px;
 }
 .hearts {
     position: absolute;
